@@ -1,0 +1,10 @@
+EntropyForge Web V4.9.0 — verification (synthetic datasets and mocked providers)
+PASS test_v49.py: two distinct planning calls; actual retained encoded feature diagnostics; holdout target perturbation isolation; stage-1-only approval and stale K rejected; stage-2 model settings actually used; trained dimensions HV=2 / EL=3; full-pool Top-7 and Al-HV envelope; min direction, process grouping, no feasible cases; export/provenance.
+PASS test_full_pool.py: full-pool predictions exactly once; BO history alignment; mixed max/min; threshold and ties; unvisited optimum found.
+PASS test_mandatory_features.py: ten selectors, no skip, RFE/SFS, genuine ties; training-only preview and target-specific K; multi-objective Pareto and export.
+PASS test_adaptive.py: different data sizes/configurations, training-only diagnostics, target-specific settings, actual execution and full-pool inverse.
+PASS test_general_constraints.py: multi-element bounds, fixed fractional composition, numeric and categorical process limits, validation, bounded and observed search, provenance.
+PASS test_design_planning.py: partial Al limits, process aliases, invalid constraints and end-to-end Al envelope export.
+PASS test_ui_adaptive.py: Chromium + real FastAPI routes through injected API bridge; version, local adaptive plan, bilingual rendering, stage 1 and stage 2 mock response, approval and actual training configuration match, bounded process UI and inverse request.
+PASS Python compilation and JavaScript syntax check.
+NOT VERIFIED: live LLM credentials/provider response quality, real material dataset, all external descriptor database values, normal network-port/browser deployment, remaining legacy tests not rerun. No experimental claims. The envelope and Pareto front are computed only within the finite generated feasible pool. CV re-fits selection inside folds; full-training selected features used in stage-2 diagnostics may differ from individual fold subsets.
